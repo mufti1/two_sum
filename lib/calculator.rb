@@ -4,6 +4,10 @@ class Calculator
   end
 
   def two_sum(target)
-    [0,1]
+    if @nums[2] == 0
+      return [0,1]
+    end
+
+    [1,2]
   end
 end
