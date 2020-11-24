@@ -14,4 +14,11 @@ describe Calculator do
       expect(calc.two_sum(3)).to eq([1,2])
     end
   end
+
+  context 'given [3,4,0,2] and target 6' do
+    it 'should return 1,3' do
+      calc = described_class.new([3,4,0,2])
+      expect(calc.two_sum(6)).to eq([1,3])
+    end
+  end
 end

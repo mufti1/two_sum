@@ -4,10 +4,13 @@ class Calculator
   end
 
   def two_sum(target)
-    if @nums[2] == 0
-      return [0,1]
+    @nums.each_with_index do |num, i|
+      @nums.each_with_index do |num, j|
+        if (@nums[i]+@nums[j]) == target
+          next if(i==j)
+          return [i, j]
+        end
+      end
     end
-
-    [1,2]
   end
 end
